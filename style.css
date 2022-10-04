@@ -1,0 +1,51 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: beige;
+    /*display: flex;
+    justify-content: center;        not suported in live-Browser Plug in*/
+}
+
+.top {
+    background-color: rgb(235, 0, 247);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    font-size: 0;
+    min-width: 90vh;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.top-gallery {
+    flex: 0 0 auto;
+    background-color: chartreuse;
+    height: 460px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+.bottom {
+    background-color:blue;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    font-size: 0;
+    min-width: 90vh;
+    height: 500px;
+    margin: 20px;
+    padding: 20px;
+}
+
+.bottom-gallery {
+    flex: 0 0 auto;
+    background-color: chartreuse;
+    height: 460px;
+    width: 300px;
+    margin-right: 20px;
+}
+
+
+
