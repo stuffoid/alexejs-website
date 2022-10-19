@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: purple;
+}
+
+html {
+    scroll-behavior: smooth;
+  }
+
+.img-container {
+    height: 500px;
+    width: 400px;
+}
+
+.img {
+    height: 100%;
+    width: 100%;
+    max-width: 50vh;
+}
