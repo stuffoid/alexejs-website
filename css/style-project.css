@@ -16,7 +16,7 @@ html {
     background-color: chartreuse;
 }
 
-.next-button .previous-button{
+.next-button, .previous-button{
     position: fixed;
     height: 30px;
     width: 90px;
