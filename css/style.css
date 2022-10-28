@@ -38,7 +38,7 @@ p {
     }
 
 .title-container{
-    position: absolute;
+    position: fixed;
     display: grid;
     grid-template-columns: 1fr auto 1fr;
     grid-template-rows: repeat(3, 1fr);
@@ -63,6 +63,11 @@ p {
     animation: translateDown 700ms ease-in forwards;
     animation-fill-mode: forwards;
 }
+
+ .nonedisplay{
+    display: none;
+}
+
 
 @keyframes remove-title {
     0% {
@@ -121,7 +126,7 @@ p {
         overflow: scroll;
     }
     .title-container {
-        position: absolute;
+        position: fixed;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: repeat(3, 1fr);
