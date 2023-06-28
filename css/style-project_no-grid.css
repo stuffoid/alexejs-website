@@ -1,0 +1,184 @@
+/*////////////////////////////////////
+BASIC HTML STUFF
+////////////////////////////////////*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #460ee0;
+    font-size: 6em;
+    text-transform: uppercase;
+    text-align: center;
+}   
+
+p {
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+/*////////////////////////////////////
+LAYOUT
+////////////////////////////////////*/
+.img-bg {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+}
+
+
+
+/*////////////////////////////////////
+CONTAINER
+////////////////////////////////////*/
+
+.grid-container{
+    display: grid;
+    margin: 5vh 100px 5vh;
+    /* grid-template: 15vh repeat(5, 15vh) / 20vh repeat(2, 40vh); */
+    grid-template: repeat(9, 8vh) / repeat(10, 8vh);
+    grid-gap: 20px 40px;
+    justify-content: center;
+    align-content: center;
+    /* height: 90vh; */
+}
+
+    .grid-title {
+        grid-column: 3 / span 3;
+        grid-row: 1 /span 1;
+        text-align: center;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+        /* background-color: cornflowerblue; */
+    }
+
+    .grid-img {
+        grid-column: 2 / span 4;
+        grid-row: 2 / span 5;
+
+    }
+
+    .grid-date {
+        grid-column: 3 / span 1;
+        grid-row: 7 / span 1;
+
+        text-align: right;
+        align-self: end;
+        font-size: 0.8rem;
+        font-weight: bold;
+        text-transform: uppercase;
+    }
+
+    .grid-text {
+        grid-column: 4 / span 5;
+        grid-row: 7 /span 3;
+
+        overflow: visible;
+        text-align: justify;
+    }
+
+    .grid-img-sub {
+        grid-column: 2 / span 2;
+        grid-row: 8 /span 1;
+        
+        text-align: right;
+        font-size: 0.8rem;
+        font-weight: lighter;
+
+    }
+
+
+
+
+
+
+.img-box-small {
+    position: relative;
+    max-width: 60vh;
+    max-height: 80vh;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: scroll;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img-box-small img {
+    object-fit: cover;
+    text-align: center;
+}
+
+
+
+/*////////////////////////////////////
+BUTTONS
+////////////////////////////////////*/
+
+.backbutton{
+    position: fixed;
+    display: flex;
+    height: 2em;
+    width: 4em; 
+    top: 4vh;
+    left: 3vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: chartreuse; */
+    text-align: center;
+}
+
+.next-button, .previous-button{
+    position: fixed;
+    display: flex;
+    height: 2em;
+    width: 6em;
+    align-items: center;
+    justify-content: center;
+    /* background-color: coral; */
+}
+
+.next-button {
+    top: 95vh;
+    right: 3vh;
+}
+
+.previous-button {
+    top: 95vh;
+    left: 3vh;
+}
+
+.title {
+    position: fixed;
+    text-align: center;
+    top: 4vh;
+    left: 50%;
+    transform: translate(-50%, -10px);
+    z-index: 5;
+}
+

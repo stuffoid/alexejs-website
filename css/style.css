@@ -1,12 +1,15 @@
-* {
-    margin: 0;
-    padding: 0;
+*, *::before, *::after {
+    box-sizing: border-box;
 }
 
 body, html {
+    margin: 0;
+    padding: 0;
     scroll-behavior: smooth;
     background-image: url('../graphics/background_skizzenchaos.png');
     background-size: cover;
+    overflow: hidden;
+    /* background-color: #FF7C00; */
 }
 h1 {
     font-family: 'Raleway', sans-serif;
