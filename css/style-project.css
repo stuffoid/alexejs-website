@@ -94,7 +94,7 @@ CONTAINER
     display: grid;
     margin: 5vh 100px 5vh;
     /* grid-template: 15vh repeat(5, 15vh) / 20vh repeat(2, 40vh); */
-    grid-template: repeat(9, 8vh) / repeat(10, 8vh);
+    grid-template: minmax(8vh, 17vh) repeat(8, 8vh) / repeat(10, 8vh);
     grid-gap: 20px 40px;
     justify-content: center;
     align-content: center;
