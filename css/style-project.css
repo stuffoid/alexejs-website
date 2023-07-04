@@ -8,6 +8,10 @@ BASIC HTML STUFF
     padding: 0;
 }
 
+:root {
+    --correction-value: 40px;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -77,14 +81,14 @@ BUTTONS
     left: 3vh;
 }
 
-.title {
+/* .title {
     position: fixed;
     text-align: center;
     top: 4vh;
     left: 50%;
     transform: translate(-50%, -10px);
     z-index: 5;
-}
+} */
 
 /*////////////////////////////////////
 CONTAINER
@@ -94,7 +98,7 @@ CONTAINER
     display: grid;
     margin: 5vh 100px 5vh;
     /* grid-template: 15vh repeat(5, 15vh) / 20vh repeat(2, 40vh); */
-    grid-template: minmax(8vh, 17vh) repeat(8, 8vh) / repeat(10, 8vh);
+    grid-template: auto repeat(8, 8vh) / repeat(10, 8vh);
     grid-gap: 20px 40px;
     justify-content: center;
     align-content: center;
@@ -102,14 +106,18 @@ CONTAINER
 }
 
     .grid-title {
-        grid-column: 3 / span 3;
-        grid-row: 1 /span 1;
-        text-align: center;
+        grid-column: 2 / span 3;
+        grid-row: 1 / span 1;
         z-index: 3;
         width: 100%;
         height: 100%;
-        /* background-color: cornflowerblue; */
+        /* height: calc(100% - var(--correction-value)); */
+        /* background-color: red; */
     }
+
+    .title-grid-align {
+        transform: translate(-7px, -20px);
+    } 
 
     .grid-img {
         grid-column: 2 / span 4;
