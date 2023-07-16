@@ -169,7 +169,9 @@ CONTAINER
 
     .grid-text {
         grid-column: 4 / span 5;
-        grid-row: 7 /span 3;
+        grid-row: 6 /span 3;
+        padding: 20px;
+        /* background-color: white; */
 
         overflow: visible;
         text-align: justify;

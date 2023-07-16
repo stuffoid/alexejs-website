@@ -1,0 +1,187 @@
+/*////////////////////////////////////
+BASIC HTML STUFF
+////////////////////////////////////*/
+
+*, *::before, *::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    
+}
+
+:root {
+    --correction-value: 40px;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+h1 {
+    font-family: 'Raleway', sans-serif;
+    color: #460ee0;
+    font-size: 6em;
+    text-transform: uppercase;
+}   
+h2 {
+     font-family: 'Raleway Light', sans-serif;
+    color: black;
+    font-size: 0.8em;
+    text-transform: uppercase;
+}
+h3 {
+    font-family: 'Raleway', sans-serif;
+    color: black;
+    font-size: 1em;
+    text-transform: uppercase;
+}   
+
+p {
+    font-family: 'Noto Serif', serif;
+    font-size: 1em;
+}
+
+a {
+    font-family: 'Raleway', sans-serif;
+    font-size: 1em;
+    color: black;
+    text-decoration: none;
+}
+a:hover {
+    font-weight: bold;
+}
+
+img {
+    height: 500px;
+    width: 400px;
+}
+
+/*////////////////////////////////////
+BUTTONS
+////////////////////////////////////*/
+
+.backbutton{
+    position: fixed;
+    display: flex;
+    height: 2em;
+    width: 4em; 
+    top: 4vh;
+    right: 3vh;
+    align-items: center;
+    justify-content: center;
+    /* background-color: chartreuse; */
+    text-align: center;
+}
+
+.next-button, .previous-button{
+    position: fixed;
+    display: flex;
+    height: 2em;
+    width: 6em;
+    align-items: center;
+    justify-content: center;
+    /* background-color: coral; */
+}
+
+.next-button {
+    top: 95vh;
+    right: 3vh;
+}
+
+.previous-button {
+    top: 95vh;
+    left: 3vh;
+}
+
+/*////////////////////////////////////
+GRID CONTAINER
+////////////////////////////////////*/
+
+.grid-container{
+    /* grid-template: 15vh repeat(5, 15vh) / 20vh repeat(2, 40vh); */
+    /* grid-template: auto repeat(5, 8vh) auto repeat(5, 8vh) / repeat(10, 8vh); */
+    display: grid;
+    margin: 5vh 100px 5vh;
+    grid-template-columns: repeat(11, 8vh);
+    grid-template-rows: 8vh, 64vh, 8vh;
+    grid-gap: 20px 40px;
+    
+    grid-template-areas:
+    ". tit tit tit tit tit tit tit tit tit . "
+    "main main main main main main main main main main main"
+    ". txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 .";
+    
+    justify-content: center;
+    align-content: center;
+} 
+
+/*////////////////////////////////////
+GRID ITEMS
+////////////////////////////////////*/
+
+    .tit {
+        /* border: 1px solid black;
+        padding: 20px; */
+        grid-area: tit;
+        z-index: 3;
+        width: 100%;
+        height: 100%;
+    }
+    .title-grid-align {
+        transform: translate(-7px, -20px);
+    } 
+    .main {
+        /* border: 1px solid black;
+        padding: 20px; */
+        grid-area: main;
+    }
+    .image {
+        /* border: 1px solid black;
+        padding: 20px; */
+        
+        max-width: 32vh;
+        height: auto;
+        z-index: -1;
+        overflow: hidden;
+    }
+    .txt {
+        /* border: 1px solid black;
+        padding: 20px; */
+        max-height: 64vh;
+        width: 40%;
+        margin: auto auto;
+        background-color: rgba(255, 255, 255, 0.5);
+        overflow: scroll;
+    }
+    .txt2 {
+        border: 1px solid black;
+        padding: 20px;
+        grid-area: txt2;
+    }
+    .grid-date-1 {
+        grid-column: 1 / span 8;
+        grid-row: 1 / span 1;
+        
+        text-align: left;
+        align-self: end;
+        text-transform: uppercase;
+        transform: translate(-7px, -10px);
+    }
+ 
+    .grid-text-title {
+        font-weight: bold;
+        align-self: baseline;
+        line-height: 2;
+    }
+    
+/*////////////////////////////////////
+    GRID ITEMS - IMAGES
+////////////////////////////////////*/
+    #float-left {
+        float: left;
+    }
+    #float-right {
+        float: right;
+        transform: translate(0, 24vh);
+    }
+
