@@ -1,0 +1,40 @@
+body {
+    overflow: hidden;
+    padding: 0;
+}
+
+.div1 {
+    margin: 50px auto;
+    width: 500px;
+    height: 250px;
+    background-color: red;
+}
+.div-container {
+    width: 250px;
+    height: 250px;
+    background-color: pink;
+    align-items: center;
+    overflow: scroll;
+    perspective: 1px;
+    transform-style: preserve-3d;
+}
+.txt {
+    margin: 10px;
+    width: 100px;
+    height: 400px;
+    
+    background-color: green;
+    float: right;
+    
+}
+.img {
+    position: absolute;
+    margin: 10px;
+    width: 100px;
+    height: 400px;
+    z-index: -1;
+    background-color: blue;
+    float: left;
+    border-style: dotted;
+    transform: translateZ(-1px) scale(2);
+}
