@@ -26,24 +26,26 @@ html {
 h1 {
     font-family: 'Raleway', sans-serif;
     color: #460ee0;
-    font-size: 6em;
+    font-size: 5.3em;
+    font-weight: 900;
     text-transform: uppercase;
 }   
 h2 {
-     font-family: 'Raleway Light', sans-serif;
+    font-family: 'Raleway Light', sans-serif;
     color: black;
     font-size: 0.8em;
-    text-transform: uppercase;
+    text-transform: lowercase;
 }
 h3 {
-    font-family: 'Raleway', sans-serif;
+    font-family: 'Manrope Black', sans-serif;
     color: black;
-    font-size: 1em;
+    font-size: 1.6em;
+    line-height: 1.5;
     text-transform: uppercase;
 }   
 
 p {
-    font-family: 'Noto Serif', serif;
+    font-family: 'Manrope', sans-serif;
     font-size: 1em;
 }
 
@@ -77,6 +79,7 @@ BUTTONS
     justify-content: center;
     /* background-color: chartreuse; */
     text-align: center;
+    z-index: 10;
 }
 
 .next-button, .previous-button{
@@ -86,7 +89,7 @@ BUTTONS
     width: 6em;
     align-items: center;
     justify-content: center;
-    /* background-color: coral; */
+    z-index: 10;
 }
 
 .next-button {
@@ -156,18 +159,16 @@ GRID ITEMS
     }
     .grid-date-1 {
         grid-column: 1 / span 8;
-        grid-row: 1 / span 1;
-        
+        grid-row: 2 / span 1;
+        color: rgb(145, 145, 145);
         text-align: left;
-        align-self: end;
-        text-transform: uppercase;
+        align-self: start;  
     }
  
     .grid-text-title {
         font-weight: bold;
         align-self: baseline;
-        margin-bottom: 0.3em;
-        text-indent: 1em;
+        margin-bottom: 0.6em;
     }
     
 /*////////////////////////////////////
