@@ -37,9 +37,11 @@ h3 {
     font-family: 'Manrope Black', sans-serif;
     color: black;
     font-size: 1.6em;
-    line-height: 1.5;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    margin-top: 2em;
     text-transform: uppercase;
-}   
+}      
 
 p {
     font-family: 'Manrope', sans-serif;
@@ -169,7 +171,6 @@ GRID ITEMS
         font-weight: bold;
         align-self: baseline;
         margin-bottom: 0.3em;
-        text-indent: 1em;
     }
     
 /*////////////////////////////////////
