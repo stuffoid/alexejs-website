@@ -26,7 +26,7 @@ html {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    color: #460ee0;
+    color: #497073;
     font-weight: 900;
     font-size: 5.3em;
     text-transform: uppercase;
@@ -81,6 +81,7 @@ BUTTONS
     justify-content: center;
     text-align: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button, .previous-button{
@@ -91,6 +92,7 @@ BUTTONS
     align-items: center;
     justify-content: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button {

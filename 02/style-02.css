@@ -25,7 +25,7 @@ html {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    color: #460ee0;
+    color: #497073;
     font-size: 5.3em;
     font-weight: 900;
     text-transform: uppercase;
@@ -80,6 +80,7 @@ BUTTONS
     /* background-color: chartreuse; */
     text-align: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button, .previous-button{
@@ -90,6 +91,7 @@ BUTTONS
     align-items: center;
     justify-content: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button {
@@ -160,7 +162,7 @@ GRID ITEMS
     .grid-date-1 {
         grid-column: 1 / span 8;
         grid-row: 2 / span 1;
-        color: rgb(145, 145, 145);
+        color: #497073;
         text-align: left;
         align-self: start;  
     }

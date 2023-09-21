@@ -26,7 +26,7 @@ html {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    color: #460ee0;
+    color: #497073;
     font-weight: 900;
     font-size: 5.3em;
     text-transform: uppercase;
@@ -81,6 +81,7 @@ BUTTONS
     justify-content: center;
     text-align: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button, .previous-button{
@@ -91,6 +92,7 @@ BUTTONS
     align-items: center;
     justify-content: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button {
@@ -174,12 +176,14 @@ GRID ITEMS
 .image {
        z-index: -1;
        overflow: visible;
+       max-height: 400px;
        
    }
 
 .image img {
     object-fit: cover;
-    max-height: 700px;
+    max-height: 400px;
+    overflow: visible;
 }
 
 .txt img {
@@ -190,33 +194,23 @@ GRID ITEMS
 }
 
     .imgl {
+        display: flex;
         grid-area: imgl;
         transform: translateZ(-10px) scale(2) translateX(-74%) translateY(11%);
-        max-height: 700px;
         overflow: visible;
-    }
-    .imgl_2 {
-        grid-area: imgl;
-        transform: translateZ(-10px) scale(2) translateX(-74%) translateY(780px);
-        max-height: 400px;
-        overflow: hidden;
+        align-self: start;
+        justify-content: flex-end;
     }
     
     .imgr {
+        display: flex;
         grid-area: imgr;
         align-self: center;
         transform: translateZ(-10px) scale(2) translateX(74%) translateY(11%);
-        max-height: 700px;
         overflow: visible;
+        align-self: start;
+        justify-content: flex-start;
     }
-
-    /* #float-left {
-        float: left;
-    }
-    #float-right {
-        float: right;
-        transform: translate(0, 24vh);
-    } */
 
     #text-image{
         width: 100%;

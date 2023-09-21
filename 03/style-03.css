@@ -1,7 +1,6 @@
-
 /*////////////////////////////////////
 BASIC HTML STUFF
-///////////////////////////////////*/
+////////////////////////////////////*/
 
 *, *::before, *::after {
     box-sizing: border-box;
@@ -26,11 +25,10 @@ html {
 
 h1 {
     font-family: 'Raleway', sans-serif;
-    color: #460ee0;
-    font-weight: 900;
+    color: #497073;
     font-size: 5.3em;
+    font-weight: 900;
     text-transform: uppercase;
-    text-align: center;
 }   
 h2 {
     font-family: 'Raleway Light', sans-serif;
@@ -66,7 +64,7 @@ a:hover {
     font-weight: bold;
 }
 
-/*///////////////////////////////////
+/*////////////////////////////////////
 BUTTONS
 ////////////////////////////////////*/
 
@@ -79,8 +77,10 @@ BUTTONS
     right: 3vh;
     align-items: center;
     justify-content: center;
+    /* background-color: chartreuse; */
     text-align: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button, .previous-button{
@@ -91,6 +91,7 @@ BUTTONS
     align-items: center;
     justify-content: center;
     z-index: 10;
+    color: #EB6340;
 }
 
 .next-button {
@@ -108,6 +109,8 @@ GRID CONTAINER
 ////////////////////////////////////*/
 
 .grid-container{
+    /* grid-template: 15vh repeat(5, 15vh) / 20vh repeat(2, 40vh);
+    grid-template: auto repeat(5, 8vh) auto repeat(5, 8vh) / repeat(10, 8vh); */
     transform-style: preserve-3d;
     display: grid;
     margin: 5vh 100px 5vh;
@@ -116,7 +119,7 @@ GRID CONTAINER
     grid-gap: 20px 40px;
     
     grid-template-areas:
-    ". tit tit tit tit tit tit tit tit tit . "
+    ". . . tit tit tit tit tit tit tit . "
     "imgl imgl imgl main main main main main imgr imgr imgr"
     ". txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 txt2 .";
     
@@ -129,6 +132,8 @@ GRID ITEMS
 ////////////////////////////////////*/
 
     .tit {
+        /* border: 1px solid black;
+        padding: 20px; */
         grid-area: tit;
         z-index: 3;
         width: 100%;
@@ -157,12 +162,13 @@ GRID ITEMS
     .grid-date-1 {
         grid-column: 1 / span 8;
         grid-row: 2 / span 1;
-        color: rgb(145, 145, 145);
+        color: #497073;
         text-align: left;
-        align-self: start;
+        align-self: start;  
     }
  
     .grid-text-title {
+        font-weight: bold;
         align-self: baseline;
         margin-bottom: 0.6em;
     }
@@ -195,13 +201,6 @@ GRID ITEMS
         max-height: 400px;
         overflow: hidden;
     }
-    .imgl_2 {
-        grid-area: imgl;
-        transform: translateZ(-10px) scale(2) translateX(-74%) translateY(780px);
-        max-height: 400px;
-        overflow: hidden;
-    }
-    
     .imgr {
         grid-area: imgr;
         align-self: center;
