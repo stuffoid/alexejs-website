@@ -37,6 +37,8 @@ h1 {
     color: #497073;
 
     font-size: calc(40px + (104 - 40) * ((100vw - 375px) / (1670 - 375)));
+    
+
     text-transform: uppercase;
 }
 h2 {
@@ -386,4 +388,17 @@ RESPONSIVE
 /* XXXL devices (large laptops and desktops, 1670px and up) */
 @media only screen and (min-width: 1670px) {
 
+    .grid-container {
+        grid-template-columns: repeat(4, 350px);
+        justify-content: center;
+    }
+
+    h1 {
+        font-size: 103px;
+    }
+
+    h3 {
+        font-size: 37px;
+    }
+    
 }

@@ -258,7 +258,15 @@ RESPONSIVE
 
 /* XXXL devices (large laptops and desktops, 1670px and up) */
 @media only screen and (min-width: 1670px) {
-   
+
+    .home {
+        position: fixed;
+        width: 1600px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); 
+    }
+    
     .title-container{
         position: fixed;
         display: grid;
