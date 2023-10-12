@@ -249,8 +249,8 @@ RESPONSIVE
         overflow: scroll;
     }
     .container{
-        margin: 125px 200px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 220px));
+        margin: 50px 50px;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 280px));
         /* background-color: red; */
     }
     
@@ -259,11 +259,6 @@ RESPONSIVE
 /* XXXL devices (large laptops and desktops, 1670px and up) */
 @media only screen and (min-width: 1670px) {
    
-    .container{
-        margin: 50px 200px;
-        grid-template-columns: repeat(auto-fit, minmax(100px, 280px));
-        /* background-color: green; */
-    }
     .title-container{
         position: fixed;
         display: grid;

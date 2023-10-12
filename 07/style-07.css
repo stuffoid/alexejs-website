@@ -140,7 +140,8 @@ GRID ITEMS
     }
     .title-grid-align {
         transform: translate(-7px, -20px);
-    } 
+    }
+    
     .main {
         position: relative;
         grid-area: main;
